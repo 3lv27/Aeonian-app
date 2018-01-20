@@ -1,7 +1,10 @@
 import React from 'react';
+import './Challenges.css'
 
-export default const Challenges = props => {
-    <div className="Challenges">
+import ChallengeLayout from './ChallengeLayout';
+
+ const Challenges = props => (
+    <div className="challenges">
         {
             props.challenges.map( item => {
                 return (
@@ -10,4 +13,6 @@ export default const Challenges = props => {
             })
         }
     </div>
-}
+ )
+
+export default Challenges
