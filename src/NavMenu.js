@@ -5,6 +5,7 @@ const NavMenu = () => (
 
     <nav className="nav">
         <div className="search">
+            <i className="fa fa-search"></i>
         </div>
         <div className="add">
         </div>

@@ -19,7 +19,7 @@ class Challenge extends Component {
                 cover: "http://www.fatbmx.com/uploads4/2013Q1/wk03/black444.jpg"
             },
             {
-                id: 1,
+                id: 2,
                 name: "BMX or DIE",
                 owner: "Donovan",
                 location: "Barcelona, Spain",
@@ -29,7 +29,7 @@ class Challenge extends Component {
                 cover: "http://s3-eu-west-1.amazonaws.com/digbmx/video/Tbb-Barcelona-bmx-street.jpg"
             },
             {
-                id: 1,
+                id: 3,
                 name: "Skate or DIE",
                 owner: "Donovan",
                 location: "Barcelona, Spain",
@@ -39,7 +39,17 @@ class Challenge extends Component {
                 cover: "http://www.todobarcelona.org/wp-content/uploads/skate-universitat.jpg"
             },
             {
-                id: 1,
+                id: 4,
+                name: "Parkour or DIE",
+                owner: "Donovan",
+                location: "Barcelona, Spain",
+                sport: "Parkour",
+                description: "jump over the trash and break a leg",
+                timeLimit: 30,
+                cover: "http://www.todobarcelona.org/wp-content/uploads/skate-universitat.jpg"
+            },
+            {
+                id: 5,
                 name: "Parkour or DIE",
                 owner: "Donovan",
                 location: "Barcelona, Spain",

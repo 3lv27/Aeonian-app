@@ -5,6 +5,8 @@ import {
   Switch
 } from 'react-router-dom';
 
+import './App.css'
+
 import Home from './Home';
 import NotFound from './NotFound';
 import Challenge from './Challenge';
