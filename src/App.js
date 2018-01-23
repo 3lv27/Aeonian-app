@@ -9,8 +9,9 @@ import './App.css'
 
 import Home from './Home';
 import NotFound from './NotFound';
-import Challenge from './Challenge';
-import NavMenu from './NavMenu';
+import Challenge from './Challenges/Containers/Challenge';
+import NewChallenge from './AddChallenge/Containers/NewChallenge';
+import NavMenu from './Menu/NavMenu';
 
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/challenges" component={Challenge} />
+        <Route path="/new" component={NewChallenge} />
         <Route component={NotFound} />
       </Switch>
       <NavMenu />
