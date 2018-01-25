@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { userSignupReq } from './user';
+import { userAuthReq } from './user';
 
 const rootReducer = combineReducers({
-    user: userSignupReq
+    user: userAuthReq
 })
 
 export default rootReducer

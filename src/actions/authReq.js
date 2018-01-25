@@ -14,3 +14,14 @@ export const userSignReq = userData => (
     }
 )
 
+export const userLogReq = userData => (
+    (dispatch, getState) => {
+        axios.post('http://localhost:3000/login/', userData)
+            .then((response) => {
+                console.log(response);
+                dispatch({ type: AuthActionTypes.LOGIN_REQ, payload: response.data })
+            }
+            )
+    }
+)
+

@@ -13,7 +13,8 @@ import Challenge from './Challenges/Containers/Challenge';
 import NewChallenge from './AddChallenge/Containers/NewChallenge';
 import NameDescription from './AddChallenge/Components/NameDescription';
 import NavMenu from './Menu/NavMenu';
-import Signup from './Auth/containers/Signup'
+import Signup from './Auth/containers/Signup';
+import Login from './Auth/containers/Login';
 
 
 const App = () => (
@@ -23,6 +24,7 @@ const App = () => (
         <Route exact path="/" component={Home} />
         <Route path="/challenges" component={Challenge} />
         <Route path="/signup" component={Signup} />
+        <Route path="/login" component={Login} />
         <Route exact path="/new" component={NewChallenge} />
         <Route path="/new/name" component={NameDescription} />
         <Route component={NotFound} />
