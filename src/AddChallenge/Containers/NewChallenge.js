@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import SelectSport from '../Components/SelectSport';
 // import NameDescription from '../Components/NameDescription';
+
 // import CoverPic from '../Components/CoverPic';
 // import SetLocation from '../Components/SetLocation';
 
@@ -22,11 +23,15 @@ class NewChallenge extends Component {
 
     addSport = (sportName) => {
         this.setState({sport: sportName})
-    }
+        }
+    
 
     render() {
         return(
+            <div>
             <SelectSport addSport={this.addSport} />
+            </div>
+
         )
     }
 }
