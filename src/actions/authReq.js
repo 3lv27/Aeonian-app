@@ -1,4 +1,6 @@
 import axios from 'axios';
+import * as AuthActionTypes from '../actiontypes/auth';
+
 
 export const userSignReq = userData => (
     (dispatch, getState) => {
@@ -6,10 +8,9 @@ export const userSignReq = userData => (
             .then((response) => 
             {
             console.log(response);
-            dispatch({type: SIGNUP_REQ, payload: response.data})
+            dispatch({type: AuthActionTypes.SIGNUP_REQ, payload: response.data})
             }
         )
     }
 )
 
-export const SIGNUP_REQ = 'SIGNUP_REQ';

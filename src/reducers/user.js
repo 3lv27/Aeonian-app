@@ -1,4 +1,4 @@
-import { SIGNUP_REQ } from '../actions/signupReq';
+import * as AuthActionTypes from '../actiontypes/auth';
 
 const initialState = {
     user: []
@@ -6,9 +6,9 @@ const initialState = {
 
 export const userSignupReq = (state = initialState, action) => {
     switch (action.type) {
-        case SIGNUP_REQ:
+        case AuthActionTypes.SIGNUP_REQ:
             return Object.assign({}, state, { user: action.payload})
-    
+
         default:
             return state
     }
